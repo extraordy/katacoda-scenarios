@@ -5,10 +5,16 @@ GOROOT=/goroot
 GO_ARCHIVE="go1.12.linux-amd64.tar.gz"
 
 curl -o /tmp/${GO_ARCHIVE} $GO_LINUX_URL
+if [ $? -ne 0 ]; then
+    echo "Error: unable to download Go archive" >> /tmp/env-init.log
+    exit 1
+fi
 
-tar zxvf /tmp/${GO_ARCHIVE} -C /tmp
+tar zxvf /tmp/${GO_ARCHIVE} -C /tmp && rm -rf /tmp/${GO_ARCHIVE}
 
 rm -rf /goroot/* && cp -a /tmp/go/* /goroot
-
-echo "background stuff" > /tmp/background.txt
+if [ $? -ne 0 ]; then
+    echo "Error: unable to copy files to goroot" >> /tmp/env-init.log
+    exit 1
+fi
 
