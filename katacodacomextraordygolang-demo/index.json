@@ -26,10 +26,7 @@
     },
     "assets": {
       "host01": [
-        {
-          "file": "main.go",
-          "target": "/home/scrapbook/tutorial"
-        }
+        {"file": "main.go", "target": "~/"}
       ]
     }
   },
