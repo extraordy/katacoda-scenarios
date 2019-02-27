@@ -32,8 +32,10 @@
   },
   "environment": {
     "uilayout": "editor-terminal",
+    "uimessage1": "EXTRAORDY golang demo environment",
     "hideintro": false,
-    "hidefinish": false
+    "hidefinish": false,
+    "icon": "fa-golang"
   },
   "backend": {
     "imageid": "go"
