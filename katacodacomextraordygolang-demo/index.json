@@ -17,10 +17,20 @@
       }
     ],
     "intro": {
-      "text": "intro.md"
+      "text": "intro.md",
+      "coursedata": "background.sh",
+      "code": "foreground.sh"
     },
     "finish": {
       "text": "finish.md"
+    },
+    "assets": {
+      "client": [
+        {
+          "file": "main.go",
+          "target": "~/"
+        }
+      ]
     }
   },
   "environment": {
