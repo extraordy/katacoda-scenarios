@@ -25,10 +25,10 @@
       "text": "finish.md"
     },
     "assets": {
-      "client": [
+      "host01": [
         {
           "file": "main.go",
-          "target": "~/"
+          "target": "/home/scrapbook/tutorial"
         }
       ]
     }
