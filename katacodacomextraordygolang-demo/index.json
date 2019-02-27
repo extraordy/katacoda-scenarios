@@ -5,7 +5,8 @@
     "steps": [
       {
         "title": "Step 1",
-        "text": "step1.md"
+        "text": "step1.md",
+        "code": "foreground.sh"
       },
       {
         "title": "Step 2",
@@ -18,8 +19,7 @@
     ],
     "intro": {
       "text": "intro.md",
-      "coursedata": "background.sh",
-      "code": "foreground.sh"
+      "courseData": "env-init.sh"
     },
     "finish": {
       "text": "finish.md"
@@ -34,7 +34,9 @@
     }
   },
   "environment": {
-    "uilayout": "editor-terminal"
+    "uilayout": "editor-terminal",
+    "hideintro": false,
+    "hidefinish": false
   },
   "backend": {
     "imageid": "go"
