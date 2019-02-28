@@ -21,7 +21,7 @@ if [ $? -ne 0 ]; then
     exit 1
 fi
 
-# Create the first project directory
+# Create the Step1 project directory
 mkdir -p ~/tutorial/http-server
 if [ $? -ne 0 ]; then
     echo "Error: unable to create the first project folder" >> /tmp/env-init.log
