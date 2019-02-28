@@ -22,7 +22,7 @@ if [ $? -ne 0 ]; then
 fi
 
 # Create the first project directory
-mkdir -p ~/src/http-server
+mkdir -p ~/tutorial/http-server
 if [ $? -ne 0 ]; then
     echo "Error: unable to create the first project folder" >> /tmp/env-init.log
     exit 1

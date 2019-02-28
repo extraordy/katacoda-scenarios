@@ -26,7 +26,7 @@
     },
     "assets": {
       "client": [
-        {"file": "main.go", "target": "~/src/http-server"}
+        {"file": "main.go", "target": "~/tutorial/http-server"}
       ]
     }
   },
